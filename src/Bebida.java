@@ -15,7 +15,7 @@ public class Bebida extends Producto {
         this.tamanio = tamanio;
     }
 
-
+    @Override
     public String mostrarDetalles(){
         return super.mostrarDetalles() + "\n" + "Tamaño: " + tamanio;
     }

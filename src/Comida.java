@@ -16,6 +16,12 @@ public class Comida extends Producto{
     public void setEsCaliente(boolean esCaliente) {
         this.esCaliente = esCaliente;
     }
+
+    @Override
+    public String mostrarDetalles(){
+        String estado = esCaliente ? "Caliente" : "Frío";
+        return super.mostrarDetalles() + "\n" + "Esado: " + estado;
+    }
 }
 
 
