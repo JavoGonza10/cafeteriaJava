@@ -14,4 +14,9 @@ public class Bebida extends Producto {
     public void setTamanio(String tamanio) {
         this.tamanio = tamanio;
     }
+
+
+    public String mostrarDetalles(){
+        return super.mostrarDetalles() + "\n" + "Tamaño: " + tamanio;
+    }
 }
