@@ -20,5 +20,12 @@ public class Ticket {
             System.out.println("No se pueden añadir más productos, el ticket está lleno.");
         }
     }
+    public double calcularTotal(){
+    double total = 0;
+    for (int i = 0; i < contadorProductos; i++) {
+        total = total + productos[i].getPrecio();
+    }
+    return total;
+ }
 
 }
