@@ -1,4 +1,4 @@
-public class Producto {
+public class Producto implements Descontable {
 
     // Atributos
     private String nombre;
@@ -43,7 +43,11 @@ public class Producto {
                 "Precio del producto: " + precio + "\n" +
                 "Categoria del producto: " + categoria;
     }
-
+    @Override
+    public double aplicarDescuento(double porcentaje) {
+       double preciofinal = precio - (precio * porcentaje);
+       return preciofinal;
+    }
 
 }
 
