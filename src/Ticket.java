@@ -28,4 +28,20 @@ public class Ticket {
     return total;
  }
 
+    public String mostrarTicket() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("=== CAFETERÍA JAVA === \n");
+        sb.append("Cliente: " + cliente.getNombre() + "\n");
+        sb.append("Camarero: " + camarero.getNombre() + " - Código: " + camarero.getCodigoEmpleado() + "\n");
+        sb.append("Productos" + "\n");
+        for (int i = 0; i < contadorProductos; i++){
+            sb.append((i +1) + ". " + productos[i].mostrarDetalles() + "\n");
+        }
+        sb.append("Total: " + calcularTotal() + " €\n");
+
+        return sb.toString();
+    }
+
+
+
 }
