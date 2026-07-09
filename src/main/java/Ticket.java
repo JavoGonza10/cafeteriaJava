@@ -12,6 +12,7 @@ public class Ticket {
         this.camarero = camarero;
     }
 
+    // Arraylist utilizar
     public void agregarProducto(Producto producto) {
         if (contadorProductos < productos.length) {
             productos[contadorProductos] = producto;
@@ -30,10 +31,10 @@ public class Ticket {
 
     public String mostrarTicket() {
         StringBuilder sb = new StringBuilder();
-        sb.append("=== CAFETERÍA JAVA === \n");
-        sb.append("Cliente: " + cliente.getNombre() + "\n");
-        sb.append("Camarero: " + camarero.getNombre() + " - Código: " + camarero.getCodigoEmpleado() + "\n");
-        sb.append("Productos" + "\n");
+        sb.append("=== CAFETERÍA JAVA ===");
+        sb.append("\nCliente: ").append(cliente.getNombre());
+        sb.append("\nCamarero: ").append(camarero.getNombre()).append(" - Código: ").append(camarero.getCodigoEmpleado());
+        sb.append("\nProductos" + "\n");
         for (int i = 0; i < contadorProductos; i++){
             sb.append((i +1) + ". " + productos[i].mostrarDetalles() + "\n");
         }

@@ -45,8 +45,7 @@ public class Producto implements Descontable {
     }
     @Override
     public double aplicarDescuento(double porcentaje) {
-       double preciofinal = precio - (precio * porcentaje);
-       return preciofinal;
+        return precio - (precio * porcentaje);
     }
 
 }
