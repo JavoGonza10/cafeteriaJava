@@ -23,11 +23,18 @@ public class Comida extends Producto{
         this.esCaliente =esCaliente;
 
     }
-
+    /**
+     * Indica si la comida se sirve caliente.
+     * @return true si la comida se sirve caliente
+     */
     public boolean isEsCaliente() {
         return esCaliente;
     }
 
+    /**
+     * Establece si la comida se sirve caliente o fría.
+     * @param esCaliente true si se sirve caliente, false si se sirve fría
+     */
     public void setEsCaliente(boolean esCaliente) {
         this.esCaliente = esCaliente;
     }

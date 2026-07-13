@@ -20,19 +20,34 @@ public class Cliente {
         this.telefono = telefono;
 
     }
-
+    /**
+     * Devuelve el telefono del cliente.
+     * @return telefono del cliente
+     */
     public String getTelefono() {
         return telefono;
     }
 
+    /**
+     * Establece el telefono del cliente.
+     * @param telefono nuevo telefono del cliente
+     */
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
+    /**
+     * Devuelve el nombre del cliente.
+     * @return nombre del cliente
+     */
     public String getNombre() {
         return nombre;
     }
 
+    /**
+     * Establece el nombre del cliente.
+     * @param nombre nuevo nombre del cliente
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }

@@ -22,3 +22,8 @@ java {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
 }
+
+javadoc {
+    destinationDir = file("docs")
+    options.encoding = "UTF-8"
+}

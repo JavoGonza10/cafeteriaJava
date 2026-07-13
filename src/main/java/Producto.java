@@ -26,27 +26,50 @@ public class Producto implements Descontable {
         this.categoria = categoria;
         this.precio = precio;
     }
-
+    /**
+     * Devuelve el nombre del producto.
+     * @return nombre del producto
+     */
     public String getNombre() {
         return nombre;
     }
 
+    /**
+     * Establece el nombre del producto.
+     * @param nombre nuevo nombre del producto
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    /**
+     * Devuelve el precio del producto.
+     * @return precio del producto
+     */
     public double getPrecio() {
         return precio;
     }
 
+    /**
+     * Establece el precio del producto.
+     * @param precio nuevo precio del producto
+     */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
+    /**
+     * Devuelve la categoria del producto.
+     * @return categoria del producto
+     */
     public String getCategoria() {
         return categoria;
     }
 
+    /**
+     * Establece la categoria del producto.
+     * @param categoria nueva categoria del producto
+     */
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }

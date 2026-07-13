@@ -22,11 +22,18 @@ public class Bebida extends Producto {
         super(nombre, categoria, precio);
         this.tamanio = tamanio;
     }
-
+    /**
+     * Devuelve el tamaño de la bebida.
+     * @return tamaño de la bebida
+     */
     public String getTamanio() {
         return tamanio;
     }
 
+    /**
+     * Establece el tamaño de la bebida.
+     * @param tamanio nuevo tamaño de la bebida
+     */
     public void setTamanio(String tamanio) {
         this.tamanio = tamanio;
     }
