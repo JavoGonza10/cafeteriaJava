@@ -1,9 +1,14 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group = 'com.cafeteria'
 version = '1.0'
+
+application {
+    mainClass = 'Main'
+}
 
 repositories {
     mavenCentral()
